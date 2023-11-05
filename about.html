@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="d" class="icon">
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+
+<body>
+
+    <!--------------------NAVBAR----------------------->
+
+    <div class="navbar">
+        <div class="logo">
+            <h1>DAG.</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!--------------------CONTENT----------------------->
+    <div class="container-aboutme">
+        <div class="box-2aboutme">
+            <div class="profile">
+                <img src="image/profile-picture.jpg" alt="">
+                <div class="detail-aboutme">
+                    <h1>Name= Dagim Tasew</h1>
+                    <h1>Age= 19</h1>
+                    <h1>Job= Developer</h1>
+                    <h1>Nationality= Ethiopian<img src="image/ethiopia-flag-icon-16.png"></h1>
+                    <p class="text">
+                            <span class="v-shape">\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/</span>
+                            <span class="moretext">
+                                I was born in 2004 , I am from Ethiopia. i live in Modjo near to Adiss Ababa.
+                                I am grade 11 student. I start Coding 3 months ago and i found it very interesting.
+                                I decided to go deep on programming.<br>I love to play video games but now adays coding is more fun than Gaming. <br>
+                                I WILL BE EXELLENT <br> DEVELOPER 
+
+                            </span>
+                    </p>
+                    <div class="separet-aboutme"></div>
+                    <button class="btnaboutme">Show more</button>
+                </div>
+            </div>
+        </div>
+        <div class="box-aboutme">
+            <h1>Programming Journey</h1>
+            <p class="text-desk">
+                I started Programming when i was grade 9 student but unfortunatly this old dell-desktop stop wroking and i almost stop coding.
+            </p>
+            <img src="image/dell-desktop.jpg" class="dell-desktop">
+            <img src="image/dell-laptop.jpeg" class="dell-laptop">
+            <p class="text-laptop">
+                Shortly after becoming a Google Developer Expert for Android earlier this year, I was asked to share my journey, to tell what eventually brought me here. While I love sharing and learning and most certainly enjoy technical writing, I felt somewhat hesitant to do an autobiographic piece. Not because of imposter syndrome. Actually, I am quite proud of how things went. It's more about not being sure if I'm a good storyteller. Still, we should try out new things and improve ourselves, right? Well, here we go..            </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        const BtnAboutME = document.querySelector('.btnaboutme');
+        const text = document.querySelector('.text')
+
+        BtnAboutME.addEventListener('click', (e) => {
+            text.classList.toggle('more');
+            if (BtnAboutME.innerText === 'Show more') {
+                BtnAboutME.innerText = 'Show less';
+            } else {
+                BtnAboutME.innerText = 'Show more';
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>
